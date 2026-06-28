@@ -7,10 +7,10 @@
 
 # Site Settings
 locale                   : "en-US"
-title                    : "Zu-Cheng Chen (陈祖成)"
+title                    : "Zu-Cheng Chen / 陈祖成"
 title_separator          : "-"
-name                     : &name "Zu-Cheng Chen (陈祖成)"
-description              : &description "personal description"
+name                     : &name "Zu-Cheng Chen / 陈祖成"
+description              : &description "Academic homepage for gravitational waves, cosmology, primordial black holes, and the early universe"
 url                      : https://zuchengchen.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "zuchengchen.github.io"
@@ -82,12 +82,12 @@ analytics:
 author:
   name             : "Zu-Cheng Chen"
   avatar           : "profile.png"
-  bio              : "I'm a lecuturer from Hunan Normal University."
+  bio              : "Associate Professor | Gravitational Waves & Cosmology"
   location         : "Changsha, China"
   employer         :
   pubmed           : #"https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"
   googlescholar    : "https://scholar.google.com/citations?user=orjQzDgAAAAJ&hl=en"
-  email            :
+  email            : "zuchengchen@hunnu.edu.cn"
   researchgate     :  #"https://www.researchgate.net/profile/Zu-Cheng-Chen"
   uri              :
   bitbucket        :
@@ -109,7 +109,7 @@ author:
   stackoverflow    : # http://stackoverflow.com/users/123456/username
   steam            :
   tumblr           :
-  twitter          : "replacethistwitterhandle"
+  twitter          :
   vine             :
   weibo            :
   xing             :

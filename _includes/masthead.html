@@ -6,18 +6,26 @@
       <nav id="site-nav" class="greedy-nav">
         <button><div class="navicon"></div></button>
         <ul class="visible-links">
-          <li class="masthead__menu-item masthead__menu-item--lg"><a href="{{ base_path }}/">{{ site.title }}</a></li>
+          <li class="masthead__menu-item masthead__menu-item--lg"><a href="{{ base_path }}/">Zu-Cheng Chen <span class="nav-cn">陈祖成</span></a></li>
           {% for link in site.data.navigation.main %}
             {% if link.url contains 'http' %}
               {% assign domain = '' %}
               {% else %}
               {% assign domain = base_path %}
             {% endif %}
-            <li class="masthead__menu-item"><a href="{{ domain }}{{ link.url }}">{{ link.title }}</a></li>
+            <li class="masthead__menu-item">
+              <a href="{{ domain }}{{ link.url }}" {% if link.title_zh %}data-i18n-en="{{ link.title }}" data-i18n-zh="{{ link.title_zh }}"{% endif %}>{{ link.title }}</a>
+            </li>
           {% endfor %}
         </ul>
         <ul class="hidden-links hidden"></ul>
       </nav>
+      <div class="masthead__lang">
+        <div class="language-toggle" data-language-toggle aria-label="Language">
+          <button type="button" data-lang-option="en">EN</button>
+          <button type="button" data-lang-option="zh">中文</button>
+        </div>
+      </div>
     </div>
   </div>
 </div>

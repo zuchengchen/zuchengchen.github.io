@@ -1,16 +1,31 @@
 ---
-layout: archive
+layout: academic-page
 title: "Talks"
 permalink: /talks/
-author_profile: true
+author_profile: false
 ---
 
-{% if site.talkmap_link == true %}
+<div class="academic-page academic-page--archive">
+  <header class="academic-page__header">
+    <p class="section-kicker">
+      <span class="lang-en">Talks</span>
+      <span class="lang-zh">学术报告</span>
+    </p>
+    <h1>
+      <span class="lang-en">Seminars and Conference Talks</span>
+      <span class="lang-zh">学术报告与会议交流</span>
+    </h1>
+    <p class="lang-en">Invited talks, seminars, and conference presentations related to gravitational waves, pulsar timing arrays, primordial black holes, and cosmology.</p>
+    <p class="lang-zh">围绕引力波、脉冲星计时阵列、原初黑洞与宇宙学的邀请报告、研讨会报告和会议交流。</p>
+  </header>
 
-<p style="text-decoration:underline;"><a href="/talkmap.html">See a map of all the places I've given a talk!</a></p>
+  {% if site.talkmap_link == true %}
+  <p><a class="text-link" href="/talkmap.html">See a map of all the places I've given a talk.</a></p>
+  {% endif %}
 
-{% endif %}
-
-{% for post in site.talks reversed %}
-  {% include archive-single-talk.html %}
-{% endfor %}
+  <div class="academic-archive-list">
+    {% for post in site.talks reversed %}
+      {% include archive-single-talk.html %}
+    {% endfor %}
+  </div>
+</div>
